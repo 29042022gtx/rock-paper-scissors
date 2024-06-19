@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    td {
+      width: 4em;
+    }
+
+    .results td:first-child {
+      text-align: left;
+    }
+
+    .results td:nth-child(2) {
+      width: 1em;
+      text-align: center;
+    }
+
+    .results td:last-child {
+      text-align: right;
+    }
+  </style>
 </head>
 <body>
+  <div class="buttons">
     <button type="button" id="rock">Rock</button>
     <button type="button" id="paper">Paper</button>
     <button type="button" id="scissors">Scissors</button>
+  </div>
+  <table class="results">
+    <tr>
+      <td>Human</td>
+      <td>|</td>
+      <td>Computer</td>
+    </tr>
+  </table>
+  <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
